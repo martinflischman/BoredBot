@@ -5,16 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BoredBot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 
 <body>
-    <h1>BoredBot</h1>
+    <div class="mx-auto flex h-screen w-full max-w-md flex-col items-center justify-center gap-4">
+        <div class="text-center">
+            <p class="text-3xl">🤖</p>
+            <h1 class="text-3xl font-medium text-black">BoredBot</h1>
+        </div>
 
-    <div id="activity-name"></div>
+        <h4 class="text-xl font-normal text-gray-700">Find something to do 👇</h4>
 
-    <button id="get-activity">Get New Activity</button>
+        <button class="btn btn-primary" id="get-activity">Push</button>
+
+        <div class="" id="activity-name"></div>
+    </div>
 </body>
 
 </html>
