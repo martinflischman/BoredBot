@@ -15,16 +15,18 @@
 </head>
 
 <body>
-    <div class="mx-auto flex h-screen w-full max-w-md flex-col items-center justify-center gap-4">
+    <main class="mx-auto flex h-screen w-full max-w-md flex-col items-center justify-center gap-4">
         <div class="text-center mb-4">
-            <p class="text-3xl">🤖</p>
+            <p class="text-3xl animate-bounce">🤖</p>
             <h1 class="text-4xl font-medium text-black">BoredBot</h1>
         </div>
 
-        <h4 class="text-center text-2xl text-gray-700" id="activity-name">Press to find something to do 👇</h4>
+        <p class="text-center text-2xl text-gray-700" id="activity-name" aria-live="polite">Press to find something to
+            do 👇</p>
 
-        <button class="btn rounded-full w-24 h-24 btn-error shadow-md cursor-pointer mt-4" id="get-activity"></button>
-    </div>
+        <button class="btn rounded-full w-24 h-24 btn-error shadow-md cursor-pointer mt-4" id="get-activity"
+            aria-label="Find a new activity."></button>
+    </main>
 </body>
 
 </html>
